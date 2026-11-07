@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy 20th Birthday 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600;1,9..144,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff0f5;--bg2:#ffd9e8;--ink:#5a1633;--soft:#8a3a5c;--pink:#ff5c9a;--pink2:#ff8fb8;--card:#ffffffcc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a0c1a;--bg2:#4a1230;--ink:#ffe3ee;--soft:#ffb3cf;--pink:#ff6fa6;--pink2:#ff9cc2;--card:#3a1226cc;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2a0c1a;--bg2:#4a1230;--ink:#ffe3ee;--soft:#ffb3cf;--pink:#ff6fa6;--pink2:#ff9cc2;--card:#3a1226cc;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--bg),var(--bg2));overflow-x:hidden;line-height:1.6}
+main{max-width:640px;margin:0 auto;padding:48px 22px 64px;text-align:center;position:relative;z-index:1}
+.age{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:800;font-size:clamp(120px,36vw,220px);line-height:.9;margin:0;color:var(--pink);text-shadow:6px 6px 0 var(--pink2);animation:pop .9s cubic-bezier(.2,1.6,.4,1) both}
+h1{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;font-size:clamp(30px,7vw,46px);margin:8px 0 4px}
+.sub{color:var(--soft);margin:0 0 36px}
+.wish{background:var(--card);border:2px solid var(--pink2);border-radius:28px;padding:28px 24px;text-align:left;backdrop-filter:blur(6px)}
+.wish p{margin:0 0 14px;font-size:18px}
+.wish p:last-child{margin:0;font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:22px;color:var(--pink);text-align:right}
+.facts{display:flex;gap:12px;justify-content:center;margin:28px 0}
+.facts div{flex:1;background:var(--pink);color:#fff;border-radius:20px;padding:14px 8px}
+.facts b{display:block;font-family:'Fraunces',Georgia,serif;font-size:34px;line-height:1}
+.facts span{font-size:14px}
+button{font:inherit;font-weight:500;font-size:18px;color:#fff;background:var(--pink);border:0;border-radius:999px;padding:14px 30px;cursor:pointer;box-shadow:0 6px 0 #d63a7a;transition:transform .15s,box-shadow .15s}
+button:hover{transform:translateY(-2px)}
+button:active{transform:translateY(4px);box-shadow:0 2px 0 #d63a7a}
+button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.secret{max-height:0;opacity:0;overflow:hidden;transition:max-height .7s,opacity .7s,margin .7s;margin-top:0}
+.secret.open{max-height:700px;opacity:1;margin-top:28px}
+.secret .wish{border-style:dashed}
+.hint{font-size:14px;color:var(--soft);margin-top:10px}
+.heart{position:fixed;top:-40px;pointer-events:none;z-index:0;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+@keyframes pop{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Happy Birthday, my love!</h1>
+  <p class="sub">คนจ๋วยอายุยี่ฉิบแย้ววว 🎀</p>
+
+  <section class="wish" aria-label="Birthday wish">
+    <p>Happy 20th birthday to the girl who makes every ordinary day feel special.</p>
+    <p>This past year with you has been the best one of my life. Your smile, your laugh and your kindness make everything brighter.</p>
+    <p>I wish you a year full of love, big dreams that come true, and endless reasons to smile. I’m so lucky to be by your side.</p>
+    <p>Love you always 💗</p>
+  </section>
+
+  <div style="height:28px"></div>
+
+  <button id="btn" aria-expanded="false" aria-controls="secret">🎁 </button>
+  <p class="hint">กดเพื่อรับคำอวยพรจากพี่โอม อิอิ 😉</p>
+
+  <section id="secret" class="secret" aria-live="polite">
+    <div class="wish">
+      <p> แฮปปี้เบิร์ดเดย์!!! 🥹</p>
+      <p>เค้าขอให้อ้วนมีความสุขมากๆขอให้อ้วนม่ายป่วยม่ายเจ็บขอให้มีแต่สิ่งดีๆเข้ามาไม่ว่าจะทำอะไรก็มีแต่สิ่งดีๆคนดีๆเข้าหาอ้วนน้าาา คนเก่งของเค้าเค้าขอให้อ้วนมีความสุขนะคั้บ</p>
+      <p>ขอบคุณที่ยังรักเค้าจนมาถึงทุกวันนี้ จากนี้ไปเค้าสัญญาว่าจะรักอ้วนให้ดีที่สุดจะตั้งใจรักอ้วนให้ดีดูแลอ้วนให้เก่งๆเยยยย</p>
+      <p>สุขสันต์วันเกิดคั้บ รักอ้วนที่สุดในโลกกกก</p>
+    </div>
+  </section>
+</main>
+
+<script>
+function rain(n){
+  var e=['💖','💗','🌸','🎀','💕','✨'];
+  for(var i=0;i<n;i++){
+    var s=document.createElement('span');
+    s.className='heart';
+    s.textContent=e[Math.floor(Math.random()*e.length)];
+    s.style.left=Math.random()*100+'vw';
+    s.style.fontSize=(16+Math.random()*24)+'px';
+    s.style.animationDuration=(3+Math.random()*4)+'s';
+    s.style.animationDelay=(Math.random()*1.5)+'s';
+    document.body.appendChild(s);
+    setTimeout(function(x){x.remove()},9000,s);
+  }
+}
+var btn=document.getElementById('btn'),box=document.getElementById('secret');
+btn.addEventListener('click',function(){
+  var open=box.classList.toggle('open');
+  btn.setAttribute('aria-expanded',open);
+  btn.textContent=open?'💗 Close':'🎁 Open your surprise';
+  if(open)rain(40);
+});
+rain(14);
+</script>
+</body>
+</html>
